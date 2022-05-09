@@ -1,0 +1,86 @@
+/* color general */
+.gris-claro{
+    background-color: #202020;
+}
+
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(100,1fr);
+}
+
+.col1{
+    grid-column: span 5;
+}
+
+.col2{
+    grid-column: span 95;
+}
+
+
+/* tamano de letra del aside */
+.p-uxs{
+    font-size: 10px;
+}
+
+/* ancho del navbar */
+.w-94p{
+    width: 94%;
+}
+
+/* estilo del input */
+.input{
+    background-color: #121212;
+    border-color: #323232;
+    border-width: 1px;
+}
+
+/* estilos de la barra de recomendaciones  */
+
+.recomendation-buttons{
+    background-color: #373737;
+    border-color: #4B4B4B;
+    border-width: 1px;
+    border-radius: 20px;
+    color: #DEDEDE;
+    margin-left: 10px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+/* estilos videos */
+.fondo-videos{
+    background-color: #181818;
+}
+
+.titulovideo{
+    color: #FFFFE9;
+}
+
+.descripcionvideo{
+    color: #AAAAAA;
+}
+
+.bordeinferior{
+    border-bottom-color: #323232;
+    border-bottom-width: 1px;
+}
+
+.tamano{
+    width: 320px;
+    height: 185px;
+}
+
+
+@media only screen and (max-width: 768px){
+    .col1{
+        grid-column: span 0;
+    }
+    
+    .col2{
+        grid-column: span 100;
+    }
+    .tamano{
+        width: 100vw;
+     
+    }
+}

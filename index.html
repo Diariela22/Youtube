@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/x-icon" href="imagenes/icologo.png">
+</head>
+<body class="w-full grilla">
+    <div class="col1">
+      <!-- Side bar -->
+      <div class="sticky top-0 sm:fixed bottom-0 md:sticky top-0">  
+        <aside class="hidden gris-claro md:flex md:flex-col w-6p h-screen items-center text-white p-uxs space-y-6 px-1 py-4">
+            <img class="cursor-pointer" src="imagenes/menu.png" alt="Menú" width="40px">  
+          <div class="flex flex-col items-center cursor-pointer">
+            <img src="imagenes/home.png" alt="Inicio">
+            <p>Inicio</p>
+          </div>
+          <div class="flex flex-col items-center cursor-pointer">
+            <img src="imagenes/explorar.png" alt="Explorar">
+            <p>Explorar</p>
+          </div>
+          <div class="flex flex-col items-center cursor-pointer">
+            <img src="imagenes/shorts.png" alt="Shorts">
+            <p>Shorts</p>
+          </div>
+          <div class="flex flex-col items-center cursor-pointer">
+            <img src="imagenes/suscripciones.png" alt="Suscripciones">
+            <p>Suscripciones</p>
+          </div>
+          <div class="flex flex-col items-center cursor-pointer">
+            <img src="imagenes/biblioteca.png" alt="Biblioteca">
+            <p>Biblioteca</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <div class="col2">
+      <div class="sticky top-0"> 
+        <!-- nav bar --> 
+        <nav class="gris-claro flex justify-between h-14 bordeinferior">
+          <div class="flex items-center justify-center">
+              <img src="imagenes/logo.png" alt="Logo">
+          </div> 
+          <div class="flex justify-center items-center">
+              <input class="h-7 w-96 input pl-2 my-2 hidden md:flex" type="text" name="" id="" placeholder="Buscar" value="" />
+              <button class="hidden md:flex"><img src="imagenes/buscar.png" alt="Buscar"></button>
+              <img class="hidden md:flex" src="imagenes/microfono.png" alt="Micrófono">
+          </div>
+          <div class="flex items-center justify-center space-x-3">
+              <img class="hidden md:flex" src="imagenes/icon1.png" alt="Subir">      
+              <img class="hidden md:flex" src="imagenes/icon2.png" alt="Cuadros">
+              <img class="hidden md:flex"  src="imagenes/icon3.png" alt="Campana">
+              <img class="hidden md:flex" src="imagenes/icon4.png" alt="Perfil">
+              <img class="md:hidden" src="imagenes/icon3.png" alt="Campana">
+              <button class="md:hidden"><img src="imagenes/buscar.png" alt="Buscar"></button>
+              <img class="md:hidden" src="imagenes/icon4.png" alt="Perfil">
+          </div>
+        </nav>
+        <!-- recommendation bar -->
+        <section class="gris-claro md:h-14 p-3 bordeinferior overflow-x-auto flex">
+          <button class="recomendation-buttons px-2.5 py-0.5 md:text-sm">Todo</button>
+          <button class="recomendation-buttons px-2.5 py-0.5 md:text-sm">Mixes</button>
+          <button class="recomendation-buttons px-2.5 py-0.5 md:text-sm">Pop latino</button>
+          <button class="recomendation-buttons px-2.5 py-0.5 md:text-sm">Música</button>
+          <button class="recomendation-buttons px-2.5 py-0.5 md:text-sm">En directo</button>
+          <button class="recomendation-buttons px-2.5 py-0.5 md:text-sm">Listas de reproducción</button>
+          <button class="recomendation-buttons px-2.5 py-0.5 md:text-sm">Música de fondo</button>
+          <button class="recomendation-buttons px-2.5 py-0.5 md:text-sm">Música independiente</button>
+          <button class="recomendation-buttons px-2.5 py-0.5 md:text-sm">Conversaciones</button>
+          <button class="recomendation-buttons px-2.5 py-0.5 md:text-sm">Comedia</button>
+          <!-- <button><img src="imagenes/flecha.png" alt="Siguiente"></button> -->
+      </div>  
+        <!-- videos -->
+      </section>
+      <section class="fondo-videos p-3 w-full">
+        <!-- fila -->
+        <div class="flex space-x-3 md:flex-row flex-col justify-center items-center md:items-start space-y-4">
+            <!-- video -->
+          <div class="flex flex-col">   
+              <img class="tamano" src="imagenes/mixmeduza.png" alt="Video2">
+              <div class="grid grid-cols-12">
+                <!-- <div class="col-span-2">
+                  <img src="imagenes/iconenergia.png" alt="perfil">
+                </div> -->
+                <div class="flex flex-col col-span-12 titulovideo">
+                  <h3 class="font-semibold text-sm pt-2">Mix: GlassAnimalsVEVO</h3>
+                  <p class="text-xs descripcionvideo pt-1">Más de este canal para ti</p>
+                  <p class="text-xs descripcionvideo"><span></span></p>
+                </div>
+              </div>
+          </div>
+            <!-- video -->
+            <div class="flex flex-col">   
+              <img class="tamano" src="imagenes/rammor.png" alt="Video2">
+              <div class="grid grid-cols-12">
+                <div class="col-span-2">
+                  <img src="imagenes/iconenergia.png" alt="perfil">
+                </div>
+                <div class="flex flex-col col-span-10 titulovideo">
+                  <h3 class="font-semibold text-sm pt-2">Elimina toda la energía negativa, sonidos...</h3>
+                  <p class="text-xs descripcionvideo pt-1">Positive Energy Relaxation Music</p>
+                  <p class="text-xs descripcionvideo">4,2 M de visualizaciones * <span>hace 2 meses</span></p>
+                </div>
+              </div>
+          </div>
+            <!-- video -->
+            <div class="flex flex-col">   
+              <img class="tamano" src="imagenes/mixmeduza.png" alt="Video2">
+              <div class="grid grid-cols-12">
+                <!-- <div class="col-span-2">
+                  <img src="imagenes/iconenergia.png" alt="perfil">
+                </div> -->
+                <div class="flex flex-col col-span-12 titulovideo">
+                  <h3 class="font-semibold text-sm pt-2">Mix: MEDUZA, Becky Hill, Goodboys - Lose Control</h3>
+                  <p class="text-xs descripcionvideo pt-1">Meduza, Becky Hill, Goodboys y más</p>
+                  <p class="text-xs descripcionvideo"><span></span></p>
+                </div>
+              </div>
+          </div>
+            <!-- video -->
+            <div class="flex flex-col">   
+              <img class="tamano" src="imagenes/rammor.png" alt="Video2">
+              <div class="grid grid-cols-12">
+                <div class="col-span-2">
+                  <img src="imagenes/icorammor.png" alt="perfil">
+                </div>
+                <div class="flex flex-col col-span-10 titulovideo">
+                  <h3 class="font-semibold text-sm pt-2">Rammor - Deep House Mix (3)</h3>
+                  <p class="text-xs descripcionvideo pt-1">Play Chill Music..</p>
+                  <p class="text-xs descripcionvideo">1,2 M de visualizaciones * <span>hace 8 meses</span></p>
+                </div>
+              </div>
+          </div>
+        </div>  <!-- termina la fila -->
+        <!-- fila -->
+        <div class="flex space-x-3 md:flex-row flex-col justify-center items-center md:items-start space-y-4">
+          <!-- video -->
+        <div class="flex flex-col pt-8 ">   
+            <img class="tamano" src="imagenes/Mix.GlassAnimalsVEVO.png" alt="Video2">
+            <div class="grid grid-cols-12">
+              <!-- <div class="col-span-2">
+                <img src="imagenes/iconenergia.png" alt="perfil">
+              </div> -->
+              <div class="flex flex-col col-span-12 titulovideo">
+                <h3 class="font-semibold text-sm pt-2">Mix: GlassAnimalsVEVO</h3>
+                <p class="text-xs descripcionvideo pt-1">Más de este canal para ti</p>
+                <p class="text-xs descripcionvideo"><span></span></p>
+              </div>
+            </div>
+        </div>
+          <!-- video -->
+          <div class="flex flex-col pt-8">   
+            <img  class="tamano" src="imagenes/rammor.png" alt="Video2">
+            <div class="grid grid-cols-12">
+              <div class="col-span-2">
+                <img src="imagenes/iconenergia.png" alt="perfil">
+              </div>
+              <div class="flex flex-col col-span-10 titulovideo">
+                <h3 class="font-semibold text-sm pt-2">Elimina toda la energía negativa, sonidos...</h3>
+                <p class="text-xs descripcionvideo pt-1">Positive Energy Relaxation Music</p>
+                <p class="text-xs descripcionvideo">4,2 M de visualizaciones * <span>hace 2 meses</span></p>
+              </div>
+            </div>
+        </div>
+          <!-- video -->
+          <div class="flex flex-col pt-8">   
+            <img class="tamano" src="imagenes/mixmeduza.png" alt="Video2">
+            <div class="grid grid-cols-12">
+              <!-- <div class="col-span-2">
+                <img src="imagenes/iconenergia.png" alt="perfil">
+              </div> -->
+              <div class="flex flex-col col-span-12 titulovideo">
+                <h3 class="font-semibold text-sm pt-2">Mix: MEDUZA, Becky Hill, Goodboys - Lose Control</h3>
+                <p class="text-xs descripcionvideo pt-1">Meduza, Becky Hill, Goodboys y más</p>
+                <p class="text-xs descripcionvideo"><span></span></p>
+              </div>
+            </div>
+        </div>
+          <!-- video -->
+          <div class="flex flex-col pt-8">   
+            <img class="tamano" src="imagenes/rammor.png" alt="Video2">
+            <div class="grid grid-cols-12">
+              <div class="col-span-2">
+                <img src="imagenes/icorammor.png" alt="perfil">
+              </div>
+              <div class="flex flex-col col-span-10 titulovideo">
+                <h3 class="font-semibold text-sm pt-2">Rammor - Deep House Mix (3)</h3>
+                <p class="text-xs descripcionvideo pt-1">Play Chill Music..</p>
+                <p class="text-xs descripcionvideo">1,2 M de visualizaciones * <span>hace 8 meses</span></p>
+              </div>
+            </div>
+        </div>
+      </div>  <!-- termina la fila -->
+          <!-- fila -->
+          <div class="flex space-x-3 md:flex-row flex-col justify-center items-center md:items-start space-y-4">
+            <!-- video -->
+          <div class="flex flex-col pt-8">   
+              <img class="tamano" src="imagenes/Mix.GlassAnimalsVEVO.png" alt="Video2">
+              <div class="grid grid-cols-12">
+                <!-- <div class="col-span-2">
+                  <img src="imagenes/iconenergia.png" alt="perfil">
+                </div> -->
+                <div class="flex flex-col col-span-12 titulovideo">
+                  <h3 class="font-semibold text-sm pt-2">Mix: GlassAnimalsVEVO</h3>
+                  <p class="text-xs descripcionvideo pt-1">Más de este canal para ti</p>
+                  <p class="text-xs descripcionvideo"><span></span></p>
+                </div>
+              </div>
+          </div>
+            <!-- video -->
+            <div class="flex flex-col pt-8">   
+              <img class="tamano" src="imagenes/rammor.png" alt="Video2">
+              <div class="grid grid-cols-12">
+                <div class="col-span-2">
+                  <img src="imagenes/iconenergia.png" alt="perfil">
+                </div>
+                <div class="flex flex-col col-span-10 titulovideo">
+                  <h3 class="font-semibold text-sm pt-2">Elimina toda la energía negativa, sonidos...</h3>
+                  <p class="text-xs descripcionvideo pt-1">Positive Energy Relaxation Music</p>
+                  <p class="text-xs descripcionvideo">4,2 M de visualizaciones * <span>hace 2 meses</span></p>
+                </div>
+              </div>
+          </div>
+            <!-- video -->
+            <div class="flex flex-col pt-8">   
+              <img class="tamano" src="imagenes/mixmeduza.png" alt="Video2">
+              <div class="grid grid-cols-12">
+                <!-- <div class="col-span-2">
+                  <img src="imagenes/iconenergia.png" alt="perfil">
+                </div> -->
+                <div class="flex flex-col col-span-12 titulovideo">
+                  <h3 class="font-semibold text-sm pt-2">Mix: MEDUZA, Becky Hill, Goodboys - Lose Control</h3>
+                  <p class="text-xs descripcionvideo pt-1">Meduza, Becky Hill, Goodboys y más</p>
+                  <p class="text-xs descripcionvideo"><span></span></p>
+                </div>
+              </div>
+          </div>
+            <!-- video -->
+            <div class="flex flex-col pt-8">   
+              <img class="tamano" src="imagenes/rammor.png" alt="Video2">
+              <div class="grid grid-cols-12">
+                <div class="col-span-2">
+                  <img src="imagenes/icorammor.png" alt="perfil">
+                </div>
+                <div class="flex flex-col col-span-10 titulovideo">
+                  <h3 class="font-semibold text-sm pt-2">Rammor - Deep House Mix (3)</h3>
+                  <p class="text-xs descripcionvideo pt-1">Play Chill Music..</p>
+                  <p class="text-xs descripcionvideo">1,2 M de visualizaciones * <span>hace 8 meses</span></p>
+                </div>
+              </div>
+          </div>
+        </div>  <!-- termina la fila -->
+      </section>
+    </div>
+    
+</body>
+</html>
